@@ -1,0 +1,476 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    place-items: center;
+    background: linear-gradient(to top right,  #6182b0, #F5EDED, #6182b0);
+    
+}
+#text_body{
+    margin-top: -7rem;
+    border-radius: 10px;
+    width: 27rem;
+    height: 30rem;
+    border: 3px solid #00008B;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-content: center;
+    display: grid;
+    place-content: center;
+}
+#text_body:hover{
+    box-shadow: 0px 0px 10px 0px darkblue;
+    border: 3px solid orangered;
+}
+#output{
+    background-color: transparent;
+    width: 25rem;
+    height: 26rem;
+    font-size: 28px;
+    text-align: center;
+    align-content: center;
+    resize: none;
+    border: none;
+}
+textarea:focus{
+    outline: none;
+}
+#download{
+    margin-top: 7rem;
+    width: 6rem;
+    height: 2rem;
+    background-color: #00008B;
+    color: whitesmoke;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border-radius: 2rem;
+}
+#sizes_buttons{
+    display: inline;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-top: 15rem;
+    background-color: whitesmoke;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 10px;
+    border: 3px solid #00008B;
+    align-items: center;
+    justify-content: center;
+}
+#increase,#decrease{
+    margin-top: 0.6rem;
+    border-radius: 10px;
+    border: none;
+    margin-left: 1rem;
+    color: whitesmoke;
+    background-color: #00008B;
+    height: 1.8rem;
+}
+#decrease{
+    margin-left: 3rem;
+}
+#increase:hover,#decrease:hover{
+    background-color: orangered;
+}
+#download:hover{
+    background-color: orangered;
+    width: 6.2rem;
+    height: 2.1rem;
+    font-size: 1rem;
+}
+#text_colors{
+    overflow: auto;
+    width: 28rem;
+    height: 20rem;
+    background-color: whitesmoke;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border-radius: 10px;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    border: 3px solid #00008B;
+}
+#text_colors:hover,#text_background:hover{
+    box-shadow: 0px 0px 10px 0px black;
+    border: 3px solid orangered;
+}
+#text_background{
+    margin-top: 1rem;
+    border-radius: 10px;
+    overflow:auto;
+    border: 3px solid #00008B;
+    width: 28rem;
+    height: 20rem;
+    background-color: whitesmoke;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+h3{
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#red,#cyan,#blue,#dblue,#lblue,#purple,#yell,#lime,#mag,#pink,#silver,#gray,#powderpink,#darkscar,#froggreen,#saladgreen
+,#org,#brown,#mar,#green,#olive,#aqm,#sblue,#lavblue,#vanilla,#redfox,#frelilac,#oldrose,#pasorange,#helipurple,#dwhite,#pastelbrown{
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0.5rem;
+    margin-left: 1.1rem;
+    border: none;
+}
+#red{
+    background-color: red;
+}
+#cyan{
+    background-color: #00FFFF;
+}
+#blue{
+    background-color: #0000FF;
+}
+#dblue{
+    background-color: #00008B;
+}
+#lblue{
+    background-color: #ADD8E6;
+}
+#purple{
+    background-color: #800080;
+}
+#yell{
+    background-color: #FFFF00;
+}
+#lime{
+    background-color: #00FF00;
+}
+#mag{
+    background-color: #FF00FF;
+}
+#pink{
+    background-color: #FFC0CB;
+}
+#silver{
+    background-color: #C0C0C0;
+}
+#gray{
+    background-color: #808080;
+}
+#org{
+    background-color: #FFA500;
+}
+#brown{
+    background-color: #A52A2A;
+}
+#mar{
+    background-color: #800000;
+}
+#green{
+    background-color: #008000;
+}
+#olive{
+    background-color: #808000;
+}
+#aqm{
+    background-color:#7FFFD4;
+}
+#sblue{
+    background-color:#C2DFFF;
+}
+#lavblue{
+    background-color:#E3E4FA;
+}
+#vanilla{
+    background-color:#F3E5AB;
+}
+#redfox{
+    background-color:#C35817;
+}
+#frelilac{
+    background-color:   #86608E;
+}
+#oldrose{
+    background-color: #C08081;
+}
+#pasorange{
+    background-color: #F8B88B;
+}
+#helipurple{
+    background-color: #D462FF;
+}
+#dwhite{
+    background-color: #E1D9D1;
+}
+#powderpink{
+    background-color: #FFB2D0;
+}
+#darkscar{
+    background-color: #560319;
+}
+#pastelbrown{
+    background-color: #B1907F;
+}
+#saladgreen{
+    background-color: #A1C935;
+}
+#froggreen{
+    background-color: #99C68E;
+}
+#text_reset{
+    width: 3.5rem;
+    border-radius: 1rem;
+    height: 1.5rem;
+    margin: 1rem;
+    color: whitesmoke;
+    background-color: #00008B;
+    border: none;
+}
+
+#red:hover,#cyan:hover,#blue:hover,#dblue:hover,#lblue:hover,#purple:hover,#yell:hover,#lime:hover,#mag:hover,
+#pink:hover,#silver:hover,#gray:hover,#powderpink:hover,#darkscar:hover,#froggreen:hover,#saladgreen:hover
+,#org:hover,#brown:hover,#mar:hover,#green:hover,#olive:hover,#aqm:hover,#sblue:hover,#lavblue:hover,#vanilla:hover,
+#redfox:hover,#frelilac:hover,#oldrose:hover,#pasorange:hover,#helipurple:hover,#dwhite:hover,#pastelbrown:hover{
+    box-shadow: 0px 0px 5px 1px;
+}
+#text_reset:hover{
+    box-shadow: 0px 0px 5px 1px;
+    background-color: orangered;
+    height: 1.6rem;
+    width: 3.6rem;
+
+}
+
+#ba_red,#ba_cyan,#ba_blue,#ba_dblue,#ba_lblue,#ba_purple,#ba_yell,#ba_lime,#ba_mag,#ba_pink,#ba_silver,#ba_gray,#ba_powderpink,#ba_darkscar,#ba_froggreen,#ba_saladgreen
+,#ba_org,#ba_brown,#ba_mar,#ba_green,#ba_olive,#ba_aqm,#ba_sblue,#ba_lavblue,#ba_vanilla,#ba_redfox,#ba_frelilac,#ba_oldrose,#ba_pasorange,#ba_helipurple,#ba_dwhite,#ba_pastelbrown{
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0.5rem;
+    margin-left: 1.1rem;
+    border: none;
+}
+#ba_red{
+    background-color: red;
+}
+#ba_cyan{
+    background-color: #00FFFF;
+}
+#ba_blue{
+    background-color: #0000FF;
+}
+#ba_dblue{
+    background-color: #00008B;
+}
+#ba_lblue{
+    background-color: #ADD8E6;
+}
+#ba_purple{
+    background-color: #800080;
+}
+#ba_yell{
+    background-color: #FFFF00;
+}
+#ba_lime{
+    background-color: #00FF00;
+}
+#ba_mag{
+    background-color: #FF00FF;
+}
+#ba_pink{
+    background-color: #FFC0CB;
+}
+#ba_silver{
+    background-color: #C0C0C0;
+}
+#ba_gray{
+    background-color: #808080;
+}
+#ba_org{
+    background-color: #FFA500;
+}
+#ba_brown{
+    background-color: #A52A2A;
+}
+#ba_mar{
+    background-color: #800000;
+}
+#ba_green{
+    background-color: #008000;
+}
+#ba_olive{
+    background-color: #808000;
+}
+#ba_aqm{
+    background-color:#7FFFD4;
+}
+#ba_sblue{
+    background-color:#C2DFFF;
+}
+#ba_lavblue{
+    background-color:#E3E4FA;
+}
+#ba_vanilla{
+    background-color:#F3E5AB;
+}
+#ba_redfox{
+    background-color:#C35817;
+}
+#ba_frelilac{
+    background-color:   #86608E;
+}
+#ba_oldrose{
+    background-color: #C08081;
+}
+#ba_pasorange{
+    background-color: #F8B88B;
+}
+#ba_helipurple{
+    background-color: #D462FF;
+}
+#ba_dwhite{
+    background-color: #E1D9D1;
+}
+#ba_powderpink{
+    background-color: #FFB2D0;
+}
+#ba_darkscar{
+    background-color: #560319;
+}
+#ba_pastelbrown{
+    background-color: #B1907F;
+}
+#ba_saladgreen{
+    background-color: #A1C935;
+}
+#ba_froggreen{
+    background-color: #99C68E;
+}
+#background_reset{
+    width: 3.5rem;
+    border-radius: 1rem;
+    height: 1.5rem;
+    margin: 1rem;
+    border: none;
+    color: whitesmoke;
+    background-color: #00008B;
+}
+#ba_red:hover,#ba_cyan:hover,#ba_blue:hover,#ba_dblue:hover,#ba_lblue:hover,#ba_purple:hover,#ba_yell:hover,#ba_lime:hover,#ba_mag:hover,#ba_pink:hover,
+#ba_silver:hover,#ba_gray:hover,#ba_powderpink:hover,#ba_darkscar:hover,#ba_froggreen:hover,#ba_saladgreen:hover,#ba_org:hover,#ba_brown:hover,#ba_mar:hover,
+#ba_green:hover,#ba_olive:hover,#ba_aqm:hover,#ba_sblue:hover,#ba_lavblue:hover,#ba_vanilla:hover,#ba_redfox:hover,#ba_frelilac:hover,#ba_oldrose:hover,
+#ba_pasorange:hover,#ba_helipurple:hover,#ba_dwhite:hover,#ba_pastelbrown:hover{
+    box-shadow: 0px 0px 5px 1px;
+}
+#background_reset:hover{
+    box-shadow: 0px 0px 5px 1px;
+    background-color: orangered;
+    height: 1.6rem;
+    width: 3.6rem;
+
+}
+
+#font_family{
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-left: 1.3rem;
+    width: 58rem;
+    height: 18rem;
+    background-color: whitesmoke;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    overflow: auto;
+    border: 3px solid #00008B;
+}
+#font_family:hover{
+    box-shadow: 0px 0px 10px 0px;
+    border: 3px solid orangered;
+}
+#font1,#font2,#font3,#font4,#font6,#font7,#font8,#font9,#font10,#font11,#font12,#font13,#font14,#font5,#font15,#font16,#font17,#font18,#font19{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    width: 8rem;
+    height: 3rem;
+    margin: 1rem;
+    background-color: #ccd6e4;
+}
+#font1:hover,#font2:hover,#font3:hover,#font4:hover,#font6:hover,#font7:hover,#font8:hover,#font9:hover,#font10:hover,#font11:hover,
+#font12:hover,#font13:hover,#font14:hover,#font5:hover,#font15:hover,#font16:hover,#font17:hover,#font18:hover,#font19:hover{
+    box-shadow: 0px 0px 5px 0px;
+}
+#font1{
+    font-family: 'Courier New', Courier, monospace;
+}
+#font2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#font3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#font4{
+    font-family: Brush Script MT;
+}
+#font5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#font6{
+    font-family: 'Times New Roman', Times, serif;
+}
+#font7{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#font8{
+    font-family: Algerian;
+}
+#font9{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#font10{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#font11{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#font12{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#font13{
+    font-family: cursive;
+}
+#font14{
+    font-family: Old English Text MT;
+}
+#font15{
+    font-family: sans-serif;
+}
+#font16{
+    font-family: jokerman;
+}
+#font17{
+    font-family: Papyrus;
+    width: 9rem;
+}
+#font18{
+    font-family:Chiller;
+}
+#font19{
+    font-family: Curlz MT;
+}
+#font_reset{
+    width: 5rem;
+    border-radius: 1.5rem;
+    height: 2.5rem;
+    margin: 1rem;
+    font-size: 1.1rem;
+    background-color: #00008B;
+    color: whitesmoke;
+}
+#font_reset:hover{
+    background-color: orangered;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
